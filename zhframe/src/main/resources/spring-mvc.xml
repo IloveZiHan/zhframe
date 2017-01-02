@@ -26,14 +26,18 @@
         http://www.springframework.org/schema/task http://www.springframework.org/schema/task/spring-task-4.0.xsd
         http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx-4.0.xsd
         http://www.springframework.org/schema/util http://www.springframework.org/schema/util/spring-util-4.0.xsd">
-    <!-- 扫描controller组件 -->
+    
     <context:component-scan base-package="com.zhoufeng.zhframe.controller"/>
-    <!-- 配置视图解析器 -->
+    
+	<mvc:annotation-driven /> 
+	
+    <mvc:resources mapping="/dwz/**" location="/dwz/" />
+    <mvc:resources mapping="/js/**" location="/js/" />
+    <mvc:resources mapping="/common/**" location="/common/" />
+	
     <bean id="viewResolver" class="org.springframework.web.servlet.view.InternalResourceViewResolver">
         <property name="viewClass" value="org.springframework.web.servlet.view.JstlView" />
         <property name="prefix" value="/WEB-INF/" />
         <property name="suffix" value=".jsp" />
     </bean>
-    <!-- 启动springMVC注解 -->
-    <mvc:annotation-driven/>
 </beans>

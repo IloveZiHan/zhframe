@@ -6,12 +6,9 @@
 <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 	<title>测试页面</title>
-	<%@include file="/common/easy_ui.jsp" %>
+	<%@include file="/common/dwz.jsp" %>
 </head>
 <body>
-	<div class="easyui-dialog" style="width:400px;height:200px"
-	    data-options="title:'My Dialog',collapsible:true,iconCls:'icon-ok',onOpen:function(){}">
-	        测试页面
-	</div>
+	<input type="text" name="xxx" class="date" pattern="yyyy-MM-dd" yearstart="-80" yearend="5"/>
 </body>
 </html>
