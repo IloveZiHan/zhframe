@@ -11,7 +11,7 @@
 <body>
 	<div class="easyui-dialog" style="width:400px;height:200px"
 	    data-options="title:'My Dialog',collapsible:true,iconCls:'icon-ok',onOpen:function(){}">
-	        dialog content.
+	        测试页面
 	</div>
 </body>
 </html>
