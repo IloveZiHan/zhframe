@@ -13,7 +13,6 @@ public class UserController {
 	@RequestMapping(value="/save")
 	public ModelAndView saveUser() {
 		ModelAndView view = new ModelAndView("/jsps/testPage");
-		System.out.println("--访问成功--");
 		return view;
 	}
 }

@@ -6,7 +6,7 @@
 <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 	<title>测试页面</title>
-	<%@include file="../common/easy_ui.jsp" %>
+	<%@include file="/common/easy_ui.jsp" %>
 </head>
 <body>
 	<div class="easyui-dialog" style="width:400px;height:200px"
