@@ -23,6 +23,7 @@ public class TestUserService {
 	public void testSave() {
 		User user = new User();
 		user.setName("中国");
+		
 		userService.save(user);
 	}
 
