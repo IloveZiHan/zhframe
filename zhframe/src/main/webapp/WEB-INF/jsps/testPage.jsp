@@ -6,9 +6,9 @@
 <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 	<title>测试页面</title>
-	<%@include file="/common/dwz.jsp" %>
+	<%@include file="/common/easyui.jsp" %>
 </head>
 <body>
-	<input type="text" name="xxx" class="date" pattern="yyyy-MM-dd" yearstart="-80" yearend="5"/>
+	<input class="easyui-textbox" prompt="Username" iconWidth="28" style="width:100%;height:34px;padding:10px;">
 </body>
 </html>
